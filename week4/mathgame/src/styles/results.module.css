@@ -1,0 +1,71 @@
+.results {
+  width: 100%;
+  height: 160vh;
+  background-color: #2D2D2D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.results .container {
+  width: 80%;
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.results .container .leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.results .container .leftContainer button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.results .container .leftContainer .titleGroup {
+  text-align: center;
+  margin-bottom: 46.5px;
+}
+
+.results .container .rightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.results .container .rightContainer .titleGroup {
+  text-align: center;
+  margin-bottom: 46.5px;
+}
+
+.results .container .rightContainer .titleGroup .title {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.31rem;
+  color: #FF0000;
+}
+/*# sourceMappingURL=results.module.css.map */

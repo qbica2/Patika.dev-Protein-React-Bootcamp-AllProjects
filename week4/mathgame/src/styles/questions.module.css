@@ -1,0 +1,99 @@
+.questions {
+  width: 100%;
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.questions .header {
+  font-size: 3rem;
+  line-height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.questions .header .option {
+  margin: 10px;
+}
+
+.questions .container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.questions .container .leftContainer {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.questions .container .rightContainer {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions .container .rightContainer button {
+  width: 210px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.questions .container .rightContainer button:nth-child(1) {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.questions .container .rightContainer button:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.questions .container .rightContainer button:nth-child(3) {
+  position: relative;
+  left: -50px;
+}
+
+.dark {
+  background-color: #2D2D2D;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.green {
+  background-color: #00BF63;
+}
+/*# sourceMappingURL=questions.module.css.map */
