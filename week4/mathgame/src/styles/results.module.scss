@@ -1,15 +1,15 @@
 .results{
     width: 100%;
-    height: 160vh;
+    height: 100vh;
     background-color: #2D2D2D;
     display: flex;
     align-items: center;
     justify-content: space-around;
     .container{
         width: 80%;
-        height: 120vh;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 50px;
         .leftContainer{
             display: flex;
             flex-direction: column;
@@ -21,19 +21,20 @@
             }
             .titleGroup{
                 text-align: center;
-                margin-bottom: 46.5px;
+                margin-bottom: 23.5px;
             }
         }
         .rightContainer{
             display: flex;
             flex-direction: column;
+            align-items: center;
             .titleGroup{
                 text-align: center;
-                margin-bottom: 46.5px;
+                margin-bottom: 23.5px;
                 .title{
                     font-weight: 400;
-                    font-size: 4rem;
-                    line-height: 5.31rem;
+                    font-size: 3.5rem;
+                    line-height: 4.5rem;
                     color: #FF0000;
                 }
             }

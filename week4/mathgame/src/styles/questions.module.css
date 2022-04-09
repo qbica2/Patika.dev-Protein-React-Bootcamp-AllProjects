@@ -1,6 +1,6 @@
 .questions {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,9 +11,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: #fff;
 }
 
@@ -28,25 +28,32 @@
 }
 
 .questions .header .option {
-  margin: 10px;
+  margin: 20px;
 }
 
 .questions .container {
   width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .questions .container .leftContainer {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 80vh;
 }
 
 .questions .container .rightContainer {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  height: 50vh;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +67,7 @@
 }
 
 .questions .container .rightContainer button {
-  width: 210px;
+  width: 140px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -70,9 +77,6 @@
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  position: relative;
-  top: 50px;
-  left: 50px;
 }
 
 .questions .container .rightContainer button:nth-child(2) {
