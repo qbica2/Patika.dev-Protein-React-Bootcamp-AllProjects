@@ -2,7 +2,7 @@
 
 ## **Live**
 
-Henüz canlıya almadım.Aldığımda paylaşacağım.
+[https://qbica-register.vercel.app/](https://qbica-register.vercel.app/)
 <br>
 
 ## Scroll & Theme Change
