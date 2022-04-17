@@ -1,0 +1,205 @@
+.overlayRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .left{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .main{
+            width: 80%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .titleGroup{
+                .title{
+                    font-weight: 700;
+                    font-size:2.938rem;
+                    line-height:3.688rem;
+                    text-align:left;
+                }
+            }
+            form{
+                label{
+                    font-size:1.25rem;
+                    line-height:1.563rem;
+                    font-weight: 700;
+                    text-align:left;
+                    letter-spacing:0.15px;
+                }
+                label.required {
+                    &::after {
+                      content: "*";
+                      color: red;
+                      padding-left: 2px;
+                    }
+                }
+                input[type="text"],
+                input[type="email"],
+                input[type="password"]{
+                    height: 56px;
+                    border-radius: 4px;
+                    border: 2px solid #8E8E8E;
+                    margin-top: 12px;
+                    padding-left:24px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.15px;
+                    color: #EE6356;
+                }
+                .nameSurname{
+                    width: 100%;
+                    height: 109px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .name{
+                        width: 45%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                    .surname{
+                        width: 45%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                }
+                .formGroup{
+                    margin: 30px 0;
+                    width: 100%;
+                    height: 109px;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 0.15px;
+                        color: #EE6356;
+                    }
+                }
+                .checkGroup{
+                    margin: 30px 0;
+                    display: flex;
+                    align-items: center;
+                    input[type="checkbox"]{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    span{
+                        margin-left: 12px;
+                        font-size:14px;
+                        line-height:18px;
+                        font-weight: bold;
+                        color: #8E8E8E;
+                        letter-spacing: 0.1px;
+                        text-align:left;
+                        .error{
+                            color: #EE6356;
+                        }
+                    }
+                }
+                button{
+                    width: 100%;
+                    height: 56px;
+                    border-radius: 4px;
+                    color: #F0F0F0;
+                    font-weight: 700;
+                    font-size:14px;
+                    line-height:18px;
+                    letter-spacing: 1.25px;
+                }
+            }
+        }
+    }
+    .right{
+        height: 92%;
+        button{
+            background-color: transparent;
+            border: none;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.light{
+    background: #E5E5E5;
+    color: #3C3C3C;
+    input{
+        color: #3C3C3C ;
+        background-color: #E5E5E5 ;
+    }
+    button{
+        background: #444AFF;
+    }
+}
+.dark{
+    background: #2C2C2C;
+    color: #FEFEFE;
+    input{
+        color: #FEFEFE ;
+        background-color: #2C2C2C ;
+    }
+    button{
+        background: #FFBF5E;
+    }
+}
+.error{
+    border: 2px solid #EE6356 !important;
+    animation: shake 400ms;
+    &:focus{
+        border: 2px solid #EE6356 !important;
+    }
+}
+
+@keyframes shake {
+    25% {
+    transform: translateX(10px);
+  }
+    50% {
+    transform: translateX(-10px);
+  }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+
+@media screen and (max-height: 1079px) {
+    .overlayRight{
+        overflow-y: scroll;
+        .left{
+            .main{
+                .titleGroup{
+                    margin-bottom: 30px;
+                    .title{
+                        font-size: 2.438rem;
+                        line-height:3.188rem;
+                    }
+                }
+                form{
+                    label{
+                        font-size: 1.025rem;
+                        line-height:1.363rem;
+                    }
+                    .formGroup{
+                        margin: 20px 0;
+                        height: 99px;
+                    }
+                }
+            }
+        }
+    }
+}

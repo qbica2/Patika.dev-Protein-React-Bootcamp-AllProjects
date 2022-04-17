@@ -1,0 +1,65 @@
+.overlayLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .logo{
+        padding-left: 56px;
+    }
+
+    .title{
+        padding-left: 56px;
+        font-weight: bold;
+        font-size: 3.688rem;
+        line-height:4.625rem;
+        text-align:left;
+        letter-spacing:-0.5px;
+    }
+
+    p{  
+        padding-left: 56px;
+        font-size:1.75rem;
+        line-height:2.188rem;
+        padding-right: 36px;
+    }
+    .vectorContainer{
+        width: 580px;
+        margin-right: 36px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        span:nth-child(1){
+            align-self: flex-end;
+        }
+        span:nth-child(2){
+            align-self: flex-start;
+        }
+    }
+}
+
+.light{
+    background: #DADADA;
+    color: #444AFF;
+}
+.dark{
+    background: #8C8C8C;
+    color: #FEFEFE;
+}
+
+@media screen and (max-height: 1079px) {
+    .overlayLeft{
+      .title{
+        font-size: 3.088rem;
+        line-height:4.025rem;
+      }
+      p{
+        font-size:1.35rem;
+        line-height:1.788rem;
+      }
+      .vectorContainer{
+          width: 490px;
+      }
+    }
+}
