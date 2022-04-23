@@ -1,0 +1,70 @@
+footer{
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    .pagination{
+        height: 72px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button{
+            width: 72px;
+            height: 48px;
+            background-color:  #222222;
+            border: none;
+            border-radius: 30px;
+            color: #7E7E7E;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23.44px;
+            letter-spacing:0.15px;
+            text-align: center;
+            user-select: none; 
+            &:hover{
+                    background-color:#7E7E7E ;
+                    color:#222222;
+                    cursor: pointer;
+            }
+          }
+    }
+}
+.active{
+    background-color:#7E7E7E !important;
+    color:#222222 !important;
+  }
+
+  @media screen and (max-width: 1300px) {
+    footer{
+      width: 900px;
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    footer{
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+      footer{
+        .pagination{
+            button{
+                width: 50px;
+            }
+        }
+      }
+  }
+
+    @media screen and (max-width: 400px) {
+    footer{
+       .pagination{
+            button{
+                width: 40px;
+                height: 35px;
+                border-radius: 20px;
+            }
+        }
+    }
+}

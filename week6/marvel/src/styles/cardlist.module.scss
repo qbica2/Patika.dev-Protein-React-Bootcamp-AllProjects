@@ -1,0 +1,29 @@
+.cardList{
+  margin-top: 150px;
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-content: space-around;
+}
+
+@media screen and (max-width: 1300px) {
+  .cardList{
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .cardList{
+    width: 650px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .cardList{
+      width: 400px;
+      flex-direction: column;
+  }
+  
+}

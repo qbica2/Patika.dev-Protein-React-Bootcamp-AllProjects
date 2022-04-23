@@ -1,0 +1,29 @@
+.nav{
+    margin-top: 100px;
+    width: 1200px;
+    height:20vh;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .nav{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav{
+        height: 40vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav{
+        margin-top: 20px;
+    }
+}
